@@ -26,5 +26,5 @@ jobs:
 
       - name: upload the artifact
         uses: actions/upload-pages-artifacts@1
-          with:
-            path: frontend/build
+        with:
+          path: frontend/build
