@@ -15,8 +15,8 @@ jobs:
 
       - name: ensure node is installed and right version
         uses: actions/setup-node@v3
-          with: 
-            node-version 16.x
+        with: 
+          node-version 16.x
 
       - name: install deps
         run: cd frontend && npm i
