@@ -31,7 +31,7 @@ jobs:
 
   security-audit:
     name: check for vulnerabilities in my deps
-    runs-on: ubuntu-latest:
+    runs-on: ubuntu-latest
       steps:
       - name: ensure node is installed and right version
         uses: actions/setup-node@v3
