@@ -31,8 +31,11 @@ jobs:
 
   security-audit:
     name: check for vulnerabilities in my deps
+    needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: checkout code
+        uses: actions/checkout@v3
       - name: ensure node is installed and right version
         uses: actions/setup-node@v3
         with: 
