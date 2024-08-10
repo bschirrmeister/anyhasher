@@ -1,6 +1,6 @@
 name: CI/CD Pipeline
 
-on
+on:
   push:
     branches:
       - olt
@@ -28,4 +28,3 @@ jobs:
         uses: actions/upload-pages-artifacts@1
           with:
             path: frontend/build
-            
